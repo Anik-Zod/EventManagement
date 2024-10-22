@@ -12,19 +12,30 @@ class UserController extends Controller
     }
 
     public function createuser(Request $request) {
-        $formFields = $request->validate([
-            'name' => ['required', 'min:3'],
-            'email' => ['required', 'min:4'],
-            'password' => ['required', 'min:3']
-        ]);
+        // $formFields = $request->validate([
+        //     'name' => ['required', 'min:3'],
+        //     'email' => ['required', 'min:4'],
+        //     'password' => ['required', 'min:3'],
+        //     'mobile' => ['required', 'min:10'],
+        //     'address' => ['required', 'min:3'],
+        // ]);
 
-        $formFields['password'] = bcrypt($formFields['password']);
+        // $formFields['password'] = bcrypt($formFields['password']);
 
-        $user = User::create($formFields);
+        // $user = User::create($formFields);
+        $user = new User;
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->mobile = $request->mobile;
+        $user->address = $request->address;
+        $user->password = bcrypt($request->password);
+        $user->utype = "";
+
+        $user->save();
 
         auth()->login($user);
 
-        return redirect('/dashboard');
+        return redirect('/all-events');
     }
 
     public function login(Request $request) {
@@ -35,7 +46,7 @@ class UserController extends Controller
 
         if(auth()->attempt($formFields)){
             $request->session()->regenerate();
-            return redirect('/dashboard');
+            return redirect('/all-events');
         }
 
         return redirect('/');

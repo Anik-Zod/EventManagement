@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Event Management</title>
+    <title>Event Management System</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
     <style>
         .cx019djj281 {
@@ -24,7 +24,7 @@
         .sam723uewh5 {
             all: unset;
             border: none;
-            background: #e9e7ff;
+            background: #e9effe;
             width: -webkit-fill-available;
             width: -moz-available;
             border-radius: 20px;
@@ -35,7 +35,7 @@
             position: absolute;
             top: 10px;
             left: 15px;
-            color: #7d6fc9;
+            color: #38c9c0;
         }
         .btn7328pqra9 {
             all: unset;
@@ -63,7 +63,7 @@
 <body class="cx019djj281 d-flex justify-content-center align-items-center vh-100">
     <div class="row NNB8941312A">
         <div class="col-12 col-md-7 col-lg-7 col-xl-7 p-5 d-none d-md-flex d-lg-flex d-xl-flex qty3891nb03">
-            <p class="pt0136mnbgy">Welcome To Event Management</p>
+            <p class="pt0136mnbgy">Welcome To Event Management System</p>
             <p class="text-white">Please register <a style="color:yellow" href="{{ url('register') }}">here</a> if you don't have an account.</p>
         </div>
         <div class="col-12 col-md-5 col-lg-5 col-xl-5 bg-white" style="padding: 100px 50px">
@@ -85,6 +85,5 @@
             </form>
         </div>
     </div>
-    
 </body>
 </html>

@@ -1,5 +1,5 @@
 .page_title {
-    background: cornflowerblue;
+    background: rgb(46, 209, 147);
     text-align: center;
     padding: 5px 0px;
     color: white;
@@ -7,5 +7,5 @@
 .single-form {
     width: 500px;
     padding: 20px;
-    box-shadow: 0px 0px 4px 1px lightgray;
+    box-shadow: 0px 0px 4px 1px rgb(126, 190, 219);
 }

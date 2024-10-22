@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Event Management</title>
+    <title>Event Management System</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
 
 </head>
@@ -20,6 +20,14 @@
             <div>
                 <label class="form-label fw-bold">Email</label>
                 <input type="email" name="email" id="email" class="form-control mb-2" required />
+            </div>
+            <div>
+                <label class="form-label fw-bold">Contact No</label>
+                <input type="text" name="mobile" id="mobile" class="form-control mb-2" required />
+            </div>
+            <div>
+                <label class="form-label fw-bold">Address</label>
+                <input type="text" name="address" id="address" class="form-control mb-2" required/>
             </div>
             <div>
                 <label class="form-label fw-bold">Password</label>
